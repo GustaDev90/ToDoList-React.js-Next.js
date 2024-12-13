@@ -53,7 +53,6 @@ export default function App() {
         <div className="App">
         
             <h1>Lista de Tarefas</h1>
-            <h1>{totalTarefas} Tarefas</h1>
         
             <h1 className="ErrorMsg">{error}</h1>
             <ul>
@@ -66,6 +65,8 @@ export default function App() {
                 ))}
 
             </ul>
+
+             <p>{totalTarefas} Tarefas</p>
 
             <input
                 type="text"
