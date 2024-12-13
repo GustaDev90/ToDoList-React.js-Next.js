@@ -51,7 +51,10 @@ export default function App() {
     //Conteúdo da pagina
     return (
         <div className="App">
+        
             <h1>Lista de Tarefas</h1>
+            <h1>{totalTarefas} Tarefas</h1>
+        
             <h1 className="ErrorMsg">{error}</h1>
             <ul>
 
@@ -63,8 +66,6 @@ export default function App() {
                 ))}
 
             </ul>
-
-            <strong>{totalTarefas} Tarefas </strong>
 
             <input
                 type="text"
