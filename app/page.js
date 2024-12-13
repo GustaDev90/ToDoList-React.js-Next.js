@@ -65,7 +65,7 @@ export default function App() {
             </ul>
 
             <strong>{totalTarefas} Tarefas </strong>
-            </br>
+
             <input
                 type="text"
                 value={input}
