@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useMemo } from 'react';
 
 export default function App() {
     //Variáveis de estado
@@ -44,6 +45,8 @@ export default function App() {
         setTarefas([]);  
 
     }
+
+    const totalTarefas = useMemo(() => tarefas.length, [tarefas]);
     
     //Conteúdo da pagina
     return (
@@ -61,6 +64,8 @@ export default function App() {
 
             </ul>
 
+            <strong>{totalTarefas} Tarefas </strong>
+                
             <input
                 type="text"
                 value={input}
